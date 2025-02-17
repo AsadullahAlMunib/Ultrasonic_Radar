@@ -16,7 +16,7 @@ void setup() {
 
   size (1800, 1000); // ***CHANGE THIS TO YOUR SCREEN RESOLUTION***
   smooth();
-  myPort = new Serial(this, "COM3", 9600); // starts the serial communication, Enter your port in "COM7" if it is not your connection
+  myPort = new Serial(this, "COM7", 9600); // starts the serial communication, Enter your port in "COM7" if it is not your connection
   myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
 }
 void draw() {
